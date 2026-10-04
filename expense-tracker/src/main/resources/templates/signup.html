@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Expense Tracker</title>
+    <style>
+        body {
+            margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0D1527 0%, #070B14 50%, #13223F 100%);
+            color: white; height: 100vh;
+            display: flex; justify-content: center; align-items: center;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(15px);
+            padding: 40px; border-radius: 24px; width: 320px; text-align: center;
+            border: 1px solid rgba(0, 242, 254, 0.25);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        h2 { color: #ffffff; margin-bottom: 25px; }
+        input {
+            width: 100%; padding: 14px; margin: 10px 0;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 14px; color: white; box-sizing: border-box;
+            outline: none;
+        }
+        input:focus { border-color: #00f2fe; }
+        button {
+            width: 100%; padding: 14px; background: #00f2fe;
+            border: none; border-radius: 14px; color: #0D1527;
+            font-weight: bold; cursor: pointer; margin-top: 10px;
+        }
+        .link { margin-top: 20px; font-size: 14px; color: rgba(255, 255, 255, 0.6); }
+        .link a { color: #00f2fe; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Create Account</h2>
+    <form action="/" method="get">
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+    <p class="link">Already have an account? <a href="/">Login</a></p>
+</div>
+
+</body>
+</html>
